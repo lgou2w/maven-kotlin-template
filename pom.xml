@@ -74,7 +74,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.12</version>
+      <version>4.13</version>
       <scope>test</scope>
     </dependency>
     <!-- PowerMockito -->
@@ -101,7 +101,7 @@
     <dependency>
       <groupId>org.amshove.kluent</groupId>
       <artifactId>kluent</artifactId>
-      <version>1.56</version>
+      <version>1.59</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -147,7 +147,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-source-plugin</artifactId>
-        <version>3.1.0</version>
+        <version>3.2.1</version>
         <executions>
           <execution>
             <id>attach-sources</id>
@@ -162,7 +162,7 @@
       <plugin>
         <groupId>pl.project13.maven</groupId>
         <artifactId>git-commit-id-plugin</artifactId>
-        <version>3.0.0</version>
+        <version>4.0.0</version>
         <executions>
           <execution>
             <id>git-info</id>
@@ -207,6 +207,7 @@
                 <Implementation-Title>${project.artifactId}</Implementation-Title>
                 <!--suppress UnresolvedMavenProperty -->
                 <Implementation-Version>git-${git.commit.id.abbrev}</Implementation-Version>
+                <Main-Class>com.lgou2w.MainKt</Main-Class>
               </manifestEntries>
             </transformer>
           </transformers>
